@@ -1,8 +1,8 @@
 OpencubesDashboard.Router.map( ->
   @resource 'mods', path: '/'
   @resource 'mod', ->
-    @resource 'mod', path: '/:mod_model.j_id', ->
-      @resource 'view', path: '/:mod_model.j_id'
+    @resource 'mod', path: '/:slug', ->
+      @resource 'view', path: '/'
       @resource 'edit', path: '/edit'
 
     @route('create')
